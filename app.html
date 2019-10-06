@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" type="image/png" href="./img/logo.jpg">
+    <!-- title -->
+    <title>Appointments</title>
+
+    <!-- bootstap css -->
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:500&display=swap" rel="stylesheet">
+
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        iframe {
+            width: 100%;
+            border: 0;
+            min-height: 80%;
+            height: 600px;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- chart section -->
+    <div class="col-md-9 col-lg-10 py-2 bg-light">
+        <!-- title row -->
+        <div class="row ">
+            <div class="col">
+                <h3>
+                    <span class="text-uppercase text-dark">Appointments/</span>
+                    <span class="text-lowercase text-small text-secondary">scheduled appointments</span>
+                </h3>
+            </div>
+        </div>
+        <!-- end of title row -->
+
+        <div class="scroll overflow-auto">
+            <div class="container max-viewpoint">
+
+                <!-- card row -->
+                <div class="row inform-card ">
+                    <div class="col col mx-5 mt-5 mb-5">
+                        <div class="card card-1">
+                            <div class="card-body">
+                                <div class="container">
+                                    <button id="authorize-button" class="btn btn-primary">Authorize
+                                        email
+                                        to reflect bookings here.</button>
+
+                                    <table class="table table-striped table-inbox hidden">
+                                        <thead>
+                                            <tr>
+                                                <th>Customer Info</th>
+                                                <th>Booking Details</th>
+                                                <th>Service Info</th>
+                                                <th>For</th>
+                                                <th>Booked On</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of cards row -->
+                </div>
+            </div>
+
+
+
+</body>
+<!-- chart js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<!-- bootstrap bundle -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+<script src="./app.js"></script>
+<!-- toggler button -->
+<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+
+
+</html>
